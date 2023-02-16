@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Khojki:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(220, 220, 220);
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+header{
+    background-color: black;
+    width: 100%;
+    max-width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .izquierda{
+    padding: 2em;
+}
+
+header p{
+    position: absolute;
+    top: 1px;
+    color: white;
+    font-family: 'DM Serif Display', serif;
+    font-size: 2em;
+}
+.izquierda .soporte{
+    color: white;
+    position: absolute;
+    top: 9px;
+    left: 320px;
+    font-size: 1.3em;
+    cursor: pointer;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+.derecha{
+    margin: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.derecha .menu__burguer{
+    width: 30px;
+    display: none;
+}
+#despliegue{
+    width: 300px;
+    height: 580px;
+    background-color: rgba(38, 47, 66, 0.918);
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    display: none;
+}
+#despliegue ul{
+    position: absolute;
+    top: -20px;
+    right: 170px;
+    list-style: none;
+}
+#despliegue ul li{
+    padding-bottom: 1px;
+}
+#despliegue a{
+    color: white;
+    border-bottom: 3px solid white;
+
+}
+
+#selector select{
+    position: absolute;
+    top: 9px;
+    right: 280px;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+nav{
+    margin: 20px;
+}
+nav a{
+    position: relative;
+    padding: 10px;
+    font-size: 1.2em;
+    color: white;
+}
+section{
+    margin-top: 25px;
+}
+section h1{
+    margin: 0px 70px;
+    font-size: 70px;
+    font-family: 'DM Serif Display', serif;
+}
+section p{
+    font-size: 2em;
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 110px;
+    margin-bottom: 20px;
+}
+section .nav_2{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.nav_2 a{
+    font-size: 1.3rem;
+    margin: 0px 80px;
+    color: black;
+    font-family: 'Noto Serif Khojki', serif;
+}
+
+.nav_2 img{
+    width: 20px;
+    position: relative;
+    top: 4.3px;
+    left: 7px;
+}
+.hero{
+    background-image: url('educacion-digital-mexico.jpg');
+    max-width: 100%;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.card h2{
+    background-color: rgba(0, 0, 0, 0.74);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    text-align: center;
+    font-size: 6rem;
+    color: white;
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+.cartel{
+    background-color: white;
+    width: 500px;
+    height: 300px;
+    border-radius: 20px 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    box-shadow: 2px 2px 4px black;
+    display: none;
+    z-index: 99;
+}
+.cartel h3{
+    text-align: center;
+    margin: 20px;
+    font-family: 'DM Serif Display', serif;
+}
+.cartel p {
+    text-align: center;
+    margin: 20px;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: bold;
+}
+.cartel button{
+    position: absolute;
+    left: 120px;
+    width: 60%;
+    height: 40px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+#programacion{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'DM Serif Display', serif;
+
+}
+#EyA{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#EyA .propuestas{
+    width: 18rem;
+    height: 23rem;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px rgb(0, 0, 0);
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(119,119,119,1) 0%, rgba(51,51,51,1) 35%, rgba(0,0,0,1) 100%);  
+
+}
+#EyA img {
+    width: 100%;
+    height: 40%;
+    border-radius: 7px;
+}
+#EyA h3{
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-family: 'Hind Siliguri', sans-serif;
+    margin-bottom: 15px;
+    
+}
+#EyA p{
+    position: relative;
+    top: 15px;
+    right: 100px;
+    color: white;
+    font-size: 15px;
+    font-family: 'Hind Siliguri', sans-serif;
+    margin-bottom: 30px;
+}
+#EyA button{
+    position: relative;
+    top: -100px;
+    left: 170px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(0, 58, 219);
+    transition: all ease-in-out 300ms;
+}
+#EyA button:hover{
+    transform: scale(1.1);
+}
+#EyA a{
+    color: white;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+#Ofimatica{
+    margin-top: 50px;
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'DM Serif Display', serif;
+}
+
+#makeup{
+    margin-top: 50px;
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'DM Serif Display', serif;
+}
+#Diseño{
+    margin-top: 50px;
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'DM Serif Display', serif;
+}
+#Idiomas{
+    margin-top: 50px;
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'DM Serif Display', serif;
+}
+
+footer{
+    margin-top: 100px;
+    position: absolute;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 90px;
+}
+footer span{
+    color: rgb(177, 113, 16);
+}
+
+
+/*Parte de la navegacion*/
+@media (max-width: 1700px ){
+    .nav_2 a{
+        margin: 0px 70px;
+        font-size: 1.2em;
+    }
+}
+@media (max-width: 1600px ){
+    .nav_2 a{
+        margin: 0px 50px;
+        font-size: 1.2em;
+    }
+}
+@media (max-width: 1429px ){
+    .nav_2 a{
+        margin: 0px 40px;
+        font-size: 1.2em;
+    }
+}
+@media (max-width: 1250px ){
+    .nav_2 a{
+        margin: 0px 30px;
+        font-size: 1.2em;
+    }
+    .nav_2 img{
+        width: 18px;
+        position: relative;
+        top: 4.3px;
+        left: 7px;
+    }
+}
+@media (max-width: 1105px ){
+    .nav_2 a{
+        margin: 0px 20px;
+        font-size: 1.2em;
+    }
+    .nav_2 img{
+        width: 18px;
+        position: relative;
+        top: 4.3px;
+        left: 7px;
+    }
+}
+@media (max-width: 985px ){
+    .nav_2 a{
+        margin: 0px 15px;
+        font-size: 1.2em;
+    }
+    .nav_2 img{
+        width: 18px;
+        position: relative;
+        top: 4.3px;
+        left: 7px;
+    }
+}
+@media (max-width: 925px ){
+    .nav_2 a{
+        margin: 0px 10px;
+        font-size: 1.2em;
+    }
+    .nav_2 img{
+        width: 15px;
+        position: relative;
+        top: 4.3px;
+        left: 7px;
+    }
+}
+@media (max-width: 843px ){
+    .nav_2 a{
+        margin: 0px 9px;
+        font-size: 1.1em;
+    }
+    .nav_2 img{
+        width: 12px;
+        position: relative;
+        top: 4.3px;
+        left: 7px;
+    }
+}
+@media (max-width: 769px){
+    section{
+        margin-top: 45px;
+        margin-bottom: 50px;
+        position: relative;
+        left: -30px;
+    }
+    section h1{
+        margin: 0px 70px;
+        font-size: 50px;
+        font-family: 'DM Serif Display', serif;
+        margin-bottom: 10px;
+    }
+    section p{
+        font-size: 1.3em;
+        position: absolute;
+        margin-top: -20px;
+        margin-left: 110px;
+        margin-bottom: 40px;
+    }
+    section .nav_2{
+        margin: 20px;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    .izquierda .soporte{
+        display: none;
+    }
+    nav a{
+        display: none;
+    }
+    .derecha .menu__burguer{
+        width: 30px;
+        display: flex;
+    }
+    #despliegue a{
+        display: flex;
+        top: 50%;
+        left: 50%;
+        margin: 12px;
+        margin-bottom: 10px;
+
+    }
+    #despliegue .soporte{
+        position: relative;
+        top: 490px;
+        left: 200px;
+        font-family: 'Hind Siliguri', sans-serif;
+        font-size: 25px;
+    }
+}
+
+/*Planes Educativos (barra negra)*/
+@media (max-width: 830px){
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
+}
+
+/*Titulo*/
+@media(max-width: 503px){
+   section h1{
+        font-size: 40px;
+    }
+    section p{
+        position: relative;
+        right: 25px;
+        font-size: 20px;
+        display: flex;
+    }
+
+}
+@media (max-width: 431px){
+    section h1{
+        font-size: 38px;
+    }
+    section p{
+        right: 25px;
+        font-size: 18px;
+    }
+}
+
+/*cartas de propuestas (900 PIXELES)*/
+@media(max-width: 900px){
+    #EyA{ /*Contenedor*/
+        display: flex;
+        flex-direction: column;
+    }
+    #EyA .propuestas{   /*cartas*/
+        position: relative;
+        margin: 0 auto;
+         width: 400px;
+         height: 335px;
+         margin-bottom: 20px;
+    }
+    #EyA img { /*imagenes*/
+        width: 100%;
+        height: 60%;
+        border-radius: 7px;
+    }
+    #EyA h3{ /*titulo del curso*/
+        text-align: center;
+        font-size: 18px;
+        color: white;
+        text-shadow: 2px 2px 2px black;
+        font-family: 'Hind Siliguri', sans-serif;
+        margin-bottom: 35px;
+    }
+    #EyA p{ /*Informacion del curso*/
+        position: relative;
+        top: -15px;
+        right: 100px;
+        color: white;
+        font-size: 1rem;
+        font-family: 'Hind Siliguri', sans-serif;
+        margin: 0px =5px;
+    }
+    #EyA button{ /*Boton de la carta*/
+        position: relative;
+        top: -125px;
+        left: 240px;
+        width: 100px;
+        height: 40px;
+        border: none;
+        border-radius: 15px;
+        background-color: rgb(0, 58, 219);
+        transition: all ease-in-out 300ms;
+    }
+}
+@media (max-width: 519px){
+    #EyA{
+        margin-top: 50px;
+    }
+    #EyA .propuestas{
+        width: 380px;
+        position: relative;
+        left: 30px;
+    }
+}
+@media (max-width: 381px){
+    #EyA .propuestas{
+        width: 350px;
+    }
+    #EyA button{
+        position: absolute;
+        top: 260px;
+    }
+}
+@media (max-width: 419px){
+    section h1{
+        font-size: 35px;
+    }
+    section p{
+        position: relative;
+        right: 30px;
+    }
+}
+
+/*Hero */
+@media (max-width: 749px){
+    .hero{
+        display: block;
+        margin: 0 auto;
+    }
+}
